@@ -13,5 +13,9 @@
         <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png" required>
         <button type="submit">Upload</button>
     </form>
+
+    {% if prediction %}
+    <h2>Prediction Result: {{ prediction }}</h2>
+    {% endif %}
 </body>
 </html>
